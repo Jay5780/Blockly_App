@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Blockly for the Web Codelab</title>
+
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body mode="maker">
+ 
+  <main>
+    <div class="container" style="display: flex;">
+    <div class="editor" style="background-color: rgb(119, 95, 66);">
+       <div  id="blocklyDiv"  style="height: 480px; width: 600px; background-color:rgb(51, 212, 159)"></div>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+        <button class="button">Run</button>
+        <div class="screen" style="height: 480px; width: 600px; background-color: rgb(232, 189, 134);">
+              <div id="light">
+                  <span id="number" style=" font-size: xx-large;">NULL</span>
+              </div>
+        </div>
+    </div>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/blockly"></script>
+  <script src="scripts/lightBlock.js"></script>
+  <script src="scripts/repeatBlock.js"></script>
+  <script src="scripts/randomBlock.js"></script>
+  <script src="scripts/ifElseBlock.js"></script>
+  <script src="scripts/printBlock.js"></script>
+  <script src="scripts/waitBlock.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+</html>
